@@ -1,0 +1,47 @@
+{% load staticfiles %}
+<!DOCTYPE HTML>
+<!--
+	Helios by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Helios by HTML5 UP</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href= '{%static "assets/css/main.css" %}'/>
+		<noscript><link rel="stylesheet" href='{%static "assets/css/noscript.css" %}' /></noscript>
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="{%url 'home'%}" id="logo">SIEUN</a></h1>
+								<hr />
+								<p>The most accurate and free word counter </p>
+							</header>
+							<footer>
+								<a href="{%url 'index'%}" class="button circled scrolly">Start</a>
+							</footer>
+						</div>
+				</div>
+		</div>
+
+		<!-- Scripts -->
+			<script src='{% static "assets/js/jquery.min.js" %}'></script>
+			<script src='{% static "assets/js/jquery.dropotron.min.js" %}'></script>
+			<script src='{% static "assets/js/jquery.scrolly.min.js" %}'></script>
+			<script src='{% static "assets/js/jquery.scrollex.min.js" %}'></script>
+			<script src='{% static "assets/js/browser.min.js" %}'></script>
+			<script src='{% static "assets/js/breakpoints.min.js" %}'></script>
+			<script src='{% static "assets/js/util.js" %}'></script>
+			<script src='{% static "assets/js/main.js" %}'></script>
+
+	</body>
+</html>
